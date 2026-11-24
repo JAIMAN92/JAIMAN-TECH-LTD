@@ -22,13 +22,13 @@ import {
   type TeacherAccount,
   type TeacherPublicProfile,
   type TermName,
-} from '../src/types';
+} from '../src/types.ts';
 import {
   flushSupabaseSync,
   hydrateStoreFromSupabase,
   isSupabaseConfigured,
   queueStoreSyncToSupabase,
-} from './supabaseSync';
+} from './supabaseSync.ts';
 
 export interface CbtStoreData {
   academicConfig: AcademicConfig;

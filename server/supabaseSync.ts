@@ -17,8 +17,8 @@ import type {
   Subject,
   TeacherAccount,
   TermName,
-} from '../src/types';
-import type { CbtStoreData } from './store';
+} from '../src/types.ts';
+import type { CbtStoreData } from './store.ts';
 
 let cachedClient: SupabaseClient | null = null;
 let cachedCredKey = '';

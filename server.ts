@@ -1,6 +1,7 @@
 import crypto from 'crypto';
 import dotenv from 'dotenv';
 import express, { type NextFunction, type Request, type Response } from 'express';
+import fs from 'fs';
 import path from 'path';
 import {
   buildScratchCardBatch,
@@ -23,12 +24,12 @@ import {
   verifyAdminPassword,
   verifySecretHash,
   type CbtStoreData,
-} from './server/store';
+} from './server/store.ts';
 import {
   forceFullSyncToSupabase,
   getSupabaseDiagnostics,
   isSupabaseConfigured,
-} from './server/supabaseSync';
+} from './server/supabaseSync.ts';
 import {
   CLASS_ARMS,
   type ActiveExamSession,
@@ -46,7 +47,7 @@ import {
   type Student,
   type Subject,
   type TeacherAccount,
-} from './src/types';
+} from './src/types.ts';
 
 dotenv.config();
 
@@ -2241,7 +2242,15 @@ async function startServer() {
     res.status(404).json({ error: 'API endpoint not found.' });
   });
 
-  if (process.env.NODE_ENV !== 'production') {
+  const distDir = path.resolve(process.cwd(), 'dist');
+  const hasDistBuild = fs.existsSync(path.join(distDir, 'index.html'));
+  const isProduction =
+    process.env.NODE_ENV === 'production' ||
+    (process.env.NODE_ENV !== 'development' &&
+      process.env.npm_lifecycle_event !== 'dev' &&
+      hasDistBuild);
+
+  if (!isProduction) {
     const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
@@ -2249,7 +2258,6 @@ async function startServer() {
     });
     app.use(vite.middlewares);
   } else {
-    const distDir = path.resolve(process.cwd(), 'dist');
     app.use(
       express.static(distDir, {
         index: false,

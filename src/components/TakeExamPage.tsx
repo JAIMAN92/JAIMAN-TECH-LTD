@@ -176,6 +176,12 @@ export const TakeExamPage: React.FC<TakeExamPageProps> = ({
     tone: 'saved' | 'offline';
     label: string;
   } | null>(null);
+  const [autosaveToast, setAutosaveToast] = useState<{
+    tone: 'saved' | 'offline';
+    title: string;
+    detail: string;
+  } | null>(null);
+  const [autosaveToastVisible, setAutosaveToastVisible] = useState(false);
 
   // Lockdown & focus proctoring state
   const [violationCount, setViolationCount] = useState(0);
@@ -191,6 +197,8 @@ export const TakeExamPage: React.FC<TakeExamPageProps> = ({
   const enteredFullscreenRef = useRef(false);
   const shortcutTimerRef = useRef<number | null>(null);
   const autosaveTimerRef = useRef<number | null>(null);
+  const toastHideTimerRef = useRef<number | null>(null);
+  const toastClearTimerRef = useRef<number | null>(null);
   const dirtySinceAutosaveRef = useRef(false);
 
   useEffect(() => {
@@ -353,6 +361,17 @@ export const TakeExamPage: React.FC<TakeExamPageProps> = ({
     setShowSubmitModal(false);
     setSubmitError('');
 
+    if (toastHideTimerRef.current) {
+      window.clearTimeout(toastHideTimerRef.current);
+      toastHideTimerRef.current = null;
+    }
+    if (toastClearTimerRef.current) {
+      window.clearTimeout(toastClearTimerRef.current);
+      toastClearTimerRef.current = null;
+    }
+    setAutosaveToastVisible(false);
+    setAutosaveToast(null);
+
     if (activeSession.lastSavedAt) {
       setAutosaveStatus({
         tone: 'saved',
@@ -368,6 +387,32 @@ export const TakeExamPage: React.FC<TakeExamPageProps> = ({
     );
     setSecondsLeft(initialRemaining);
   }, [activeSession]);
+
+  useEffect(() => {
+    return () => {
+      if (toastHideTimerRef.current) window.clearTimeout(toastHideTimerRef.current);
+      if (toastClearTimerRef.current) window.clearTimeout(toastClearTimerRef.current);
+    };
+  }, []);
+
+  const showAutosaveToast = useCallback(
+    (tone: 'saved' | 'offline', title: string, detail: string) => {
+      if (toastHideTimerRef.current) window.clearTimeout(toastHideTimerRef.current);
+      if (toastClearTimerRef.current) window.clearTimeout(toastClearTimerRef.current);
+
+      setAutosaveToast({ tone, title, detail });
+      setAutosaveToastVisible(true);
+
+      toastHideTimerRef.current = window.setTimeout(() => {
+        setAutosaveToastVisible(false);
+      }, 2400);
+
+      toastClearTimerRef.current = window.setTimeout(() => {
+        setAutosaveToast(null);
+      }, 2700);
+    },
+    []
+  );
 
   const requestExamFullscreen = useCallback(async () => {
     try {
@@ -389,32 +434,56 @@ export const TakeExamPage: React.FC<TakeExamPageProps> = ({
   }, []);
 
   // Push autosave payload to server
-  const pushAutosaveToServer = useCallback(async (sessionId: string) => {
-    try {
-      const res = await fetch('/api/exams/autosave', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          sessionId,
-          answers: answersRef.current,
-          flagged: flaggedRef.current,
-        }),
-      });
-      if (res.ok) {
-        const data = await res.json();
-        dirtySinceAutosaveRef.current = false;
-        setAutosaveStatus({
-          tone: 'saved',
-          label: `Autosaved ${formatSavedTime(data.savedAt || new Date().toISOString())}`,
+  const pushAutosaveToServer = useCallback(
+    async (sessionId: string) => {
+      try {
+        const res = await fetch('/api/exams/autosave', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            sessionId,
+            answers: answersRef.current,
+            flagged: flaggedRef.current,
+          }),
         });
+        if (res.ok) {
+          const data = await safeReadJson<{ savedAt?: string }>(res);
+          const timeLabel = formatSavedTime(data.savedAt || new Date().toISOString());
+          dirtySinceAutosaveRef.current = false;
+          setAutosaveStatus({
+            tone: 'saved',
+            label: `Autosaved ${timeLabel}`,
+          });
+          showAutosaveToast(
+            'saved',
+            'Progress autosaved',
+            timeLabel ? `Synced at ${timeLabel}` : 'Answers safely stored'
+          );
+          return;
+        }
+        setAutosaveStatus({
+          tone: 'offline',
+          label: 'Saved locally (sync pending)',
+        });
+        showAutosaveToast(
+          'offline',
+          'Saved locally on device',
+          'Server sync will retry automatically'
+        );
+      } catch {
+        setAutosaveStatus({
+          tone: 'offline',
+          label: 'Saved locally (offline)',
+        });
+        showAutosaveToast(
+          'offline',
+          'Saved locally (offline)',
+          'Answers will sync when connection returns'
+        );
       }
-    } catch {
-      setAutosaveStatus({
-        tone: 'offline',
-        label: 'Saved locally (offline)',
-      });
-    }
-  }, []);
+    },
+    [showAutosaveToast]
+  );
 
   // Persist locally on every answer/flag edit and debounce server sync
   const updateAnswer = useCallback(
@@ -2466,6 +2535,43 @@ export const TakeExamPage: React.FC<TakeExamPageProps> = ({
                   Acknowledge &amp; Return to Exam
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Subtle Autosave Confirmation Toast */}
+      {autosaveToast && (
+        <div
+          role="status"
+          aria-live="polite"
+          className={`fixed bottom-5 right-5 z-40 pointer-events-none transition-all duration-200 ${
+            autosaveToastVisible
+              ? 'opacity-100 translate-y-0'
+              : 'opacity-0 translate-y-2'
+          }`}
+        >
+          <div
+            className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border shadow-md backdrop-blur-xs text-xs ${
+              autosaveToast.tone === 'offline'
+                ? 'bg-amber-50/95 border-amber-200 text-amber-950'
+                : 'bg-white/95 border-emerald-200 text-slate-900'
+            }`}
+          >
+            {autosaveToast.tone === 'offline' ? (
+              <CloudOff className="w-4 h-4 text-amber-700 shrink-0" />
+            ) : (
+              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+            )}
+            <div className="leading-tight">
+              <p className="font-semibold">{autosaveToast.title}</p>
+              <p
+                className={`text-[11px] font-mono tabular-nums ${
+                  autosaveToast.tone === 'offline' ? 'text-amber-800' : 'text-slate-500'
+                }`}
+              >
+                {autosaveToast.detail}
+              </p>
             </div>
           </div>
         </div>
