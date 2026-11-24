@@ -1,0 +1,1544 @@
+{
+  "academicConfig": {
+    "currentSession": "2026/2027",
+    "currentTerm": "First Term",
+    "sessions": [
+      "2025/2026",
+      "2026/2027",
+      "2027/2028"
+    ]
+  },
+  "teachers": [
+    {
+      "id": "tch-adebayo",
+      "fullName": "Mr. Adebayo Samuel",
+      "username": "t.adebayo",
+      "passwordHash": "9497df620e6e94b6d035eabdb3740be4:41e05f307786b8935e2c3f93d3c2b8ebfa9eeb3c2d256cb6fe45b0fbcf9060e29fc8aad295d776681a0880759f3bfa4ba26e73aadd10b5605ec430a9781f37ee",
+      "subjectIds": [
+        "sub-math",
+        "sub-bsc",
+        "sub-phy",
+        "sub-ict",
+        "sub-practice",
+        "sub-d76bcd39",
+        "sub-41f95acb",
+        "sub-b873bcba"
+      ],
+      "classes": [
+        "JSS1",
+        "JSS2",
+        "JSS3",
+        "SS1",
+        "SS2",
+        "SS3"
+      ],
+      "isActive": true,
+      "createdAt": "2026-11-23T13:46:24.255Z"
+    },
+    {
+      "id": "tch-okonkwo",
+      "fullName": "Mrs. Okonkwo Ngozi",
+      "username": "t.okonkwo",
+      "passwordHash": "993c7524946d3a37acfe0721941f5314:5a0a260bcd53a3fab64614f57b6ba1b1f01855fb5e63c13f4de55778d82e974af9979b005d0bd567f4fa31caa555e2b34b8d2208da39c3c51e6e36cc024b3421",
+      "subjectIds": [
+        "sub-eng",
+        "sub-civic",
+        "sub-bio",
+        "sub-chem",
+        "sub-practice"
+      ],
+      "classes": [
+        "JSS1",
+        "JSS2",
+        "JSS3",
+        "SS1",
+        "SS2",
+        "SS3"
+      ],
+      "isActive": true,
+      "createdAt": "2026-11-23T13:46:24.255Z"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "sub-math",
+      "name": "Mathematics",
+      "code": "MTH 101",
+      "term": "2026/2027 Termly CBT",
+      "classes": [
+        "JSS1",
+        "JSS2",
+        "JSS3",
+        "SS1",
+        "SS2",
+        "SS3"
+      ],
+      "durationMinutes": 20,
+      "passMark": 50,
+      "isActive": true,
+      "instructions": "Attempt all multiple-choice questions carefully. Rough work sheets are permitted on your desk; electronic calculators are not allowed.",
+      "arms": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "sessionName": "2026/2027",
+      "assessmentType": "Exam",
+      "isPractice": false,
+      "allowedAttempts": 1,
+      "shuffleQuestions": true,
+      "shuffleOptions": true,
+      "showScoreAfterSubmit": true,
+      "showReviewAfterSubmit": true,
+      "enableBrowserGuardrails": true
+    },
+    {
+      "id": "sub-eng",
+      "name": "English Language",
+      "code": "ENG 102",
+      "term": "2026/2027 Termly CBT",
+      "classes": [
+        "JSS1",
+        "JSS2",
+        "JSS3",
+        "SS1",
+        "SS2",
+        "SS3"
+      ],
+      "durationMinutes": 20,
+      "passMark": 50,
+      "isActive": true,
+      "instructions": "Select the option (A–D) that best completes each sentence or answers the lexis and structure question.",
+      "arms": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "sessionName": "2026/2027",
+      "assessmentType": "Exam",
+      "isPractice": false,
+      "allowedAttempts": 1,
+      "shuffleQuestions": true,
+      "shuffleOptions": true,
+      "showScoreAfterSubmit": true,
+      "showReviewAfterSubmit": true,
+      "enableBrowserGuardrails": true
+    },
+    {
+      "id": "sub-civic",
+      "name": "Civic Education",
+      "code": "CIV 103",
+      "term": "2026/2027 Termly CBT",
+      "classes": [
+        "JSS1",
+        "JSS2",
+        "JSS3",
+        "SS1",
+        "SS2",
+        "SS3"
+      ],
+      "durationMinutes": 15,
+      "passMark": 50,
+      "isActive": true,
+      "instructions": "Answer all questions on Nigerian citizenship, constitution, human rights, and national values.",
+      "arms": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "sessionName": "2026/2027",
+      "assessmentType": "Exam",
+      "isPractice": false,
+      "allowedAttempts": 1,
+      "shuffleQuestions": true,
+      "shuffleOptions": true,
+      "showScoreAfterSubmit": true,
+      "showReviewAfterSubmit": true,
+      "enableBrowserGuardrails": true
+    },
+    {
+      "id": "sub-bsc",
+      "name": "Basic Science",
+      "code": "BSC 201",
+      "term": "2026/2027 Termly CBT",
+      "classes": [
+        "JSS1",
+        "JSS2",
+        "JSS3"
+      ],
+      "durationMinutes": 15,
+      "passMark": 50,
+      "isActive": true,
+      "instructions": "Junior Secondary examination covering living things, matter, energy, and environmental health.",
+      "arms": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "sessionName": "2026/2027",
+      "assessmentType": "Exam",
+      "isPractice": false,
+      "allowedAttempts": 1,
+      "shuffleQuestions": true,
+      "shuffleOptions": true,
+      "showScoreAfterSubmit": true,
+      "showReviewAfterSubmit": true,
+      "enableBrowserGuardrails": true
+    },
+    {
+      "id": "sub-bio",
+      "name": "Biology",
+      "code": "BIO 301",
+      "term": "2026/2027 WAEC/NECO Mock",
+      "classes": [
+        "SS1",
+        "SS2",
+        "SS3"
+      ],
+      "durationMinutes": 20,
+      "passMark": 50,
+      "isActive": true,
+      "instructions": "Senior Secondary mock paper covering cell biology, ecology, nutrition, and genetics.",
+      "arms": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "sessionName": "2026/2027",
+      "assessmentType": "Exam",
+      "isPractice": false,
+      "allowedAttempts": 1,
+      "shuffleQuestions": true,
+      "shuffleOptions": true,
+      "showScoreAfterSubmit": true,
+      "showReviewAfterSubmit": true,
+      "enableBrowserGuardrails": true
+    },
+    {
+      "id": "sub-chem",
+      "name": "Chemistry",
+      "code": "CHM 302",
+      "term": "2026/2027 WAEC/NECO Mock",
+      "classes": [
+        "SS1",
+        "SS2",
+        "SS3"
+      ],
+      "durationMinutes": 20,
+      "passMark": 50,
+      "isActive": true,
+      "instructions": "Senior Secondary mock paper on atomic structure, chemical bonding, acids, bases, and stoichiometry.",
+      "arms": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "sessionName": "2026/2027",
+      "assessmentType": "Exam",
+      "isPractice": false,
+      "allowedAttempts": 1,
+      "shuffleQuestions": true,
+      "shuffleOptions": true,
+      "showScoreAfterSubmit": true,
+      "showReviewAfterSubmit": true,
+      "enableBrowserGuardrails": true
+    },
+    {
+      "id": "sub-phy",
+      "name": "Physics",
+      "code": "PHY 303",
+      "term": "2026/2027 WAEC/NECO Mock",
+      "classes": [
+        "SS1",
+        "SS2",
+        "SS3"
+      ],
+      "durationMinutes": 20,
+      "passMark": 50,
+      "isActive": true,
+      "instructions": "Senior Secondary mock paper covering mechanics, waves, electricity, and fundamental SI units.",
+      "arms": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "sessionName": "2026/2027",
+      "assessmentType": "Exam",
+      "isPractice": false,
+      "allowedAttempts": 1,
+      "shuffleQuestions": true,
+      "shuffleOptions": true,
+      "showScoreAfterSubmit": true,
+      "showReviewAfterSubmit": true,
+      "enableBrowserGuardrails": true
+    },
+    {
+      "id": "sub-ict",
+      "name": "Computer Studies (ICT)",
+      "code": "ICT 104",
+      "term": "2026/2027 Termly CBT",
+      "classes": [
+        "JSS1",
+        "JSS2",
+        "JSS3",
+        "SS1",
+        "SS2",
+        "SS3"
+      ],
+      "durationMinutes": 15,
+      "passMark": 50,
+      "isActive": true,
+      "instructions": "Covers computer hardware, operating systems, data processing, networking, and digital safety.",
+      "arms": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "sessionName": "2026/2027",
+      "assessmentType": "Exam",
+      "isPractice": false,
+      "allowedAttempts": 1,
+      "shuffleQuestions": true,
+      "shuffleOptions": true,
+      "showScoreAfterSubmit": true,
+      "showReviewAfterSubmit": true,
+      "enableBrowserGuardrails": true
+    },
+    {
+      "id": "sub-practice",
+      "name": "General CBT Practice Test",
+      "code": "PRC 101",
+      "sessionName": "2026/2027",
+      "term": "First Term",
+      "assessmentType": "Practice",
+      "isPractice": true,
+      "classes": [
+        "JSS1",
+        "JSS2",
+        "JSS3",
+        "SS1",
+        "SS2",
+        "SS3"
+      ],
+      "arms": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "durationMinutes": 15,
+      "passMark": 50,
+      "isActive": true,
+      "allowedAttempts": 0,
+      "shuffleQuestions": true,
+      "shuffleOptions": true,
+      "showScoreAfterSubmit": true,
+      "showReviewAfterSubmit": true,
+      "enableBrowserGuardrails": false,
+      "instructions": "Practice paper featuring Multiple-Choice, True/False, Fill-in-the-Blank, and Comprehension Passage items for unlimited warm-up drills."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-mth-1",
+      "subjectId": "sub-math",
+      "prompt": "Simplify the algebraic expression: 3(2x - 4) + 2(x + 5).",
+      "options": {
+        "A": "8x - 2",
+        "B": "8x + 2",
+        "C": "6x - 2",
+        "D": "8x - 22"
+      },
+      "correctOption": "A",
+      "explanation": "3(2x - 4) + 2(x + 5) = 6x - 12 + 2x + 10 = 8x - 2.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Algebra & Numeracy"
+    },
+    {
+      "id": "q-mth-2",
+      "subjectId": "sub-math",
+      "prompt": "Convert 45% to a fraction in its lowest term.",
+      "options": {
+        "A": "9/25",
+        "B": "9/20",
+        "C": "4/9",
+        "D": "11/20"
+      },
+      "correctOption": "B",
+      "explanation": "45/100 divided by 5 in numerator and denominator gives 9/20.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Algebra & Numeracy"
+    },
+    {
+      "id": "q-mth-3",
+      "subjectId": "sub-math",
+      "prompt": "Find the value of x if 5x - 7 = 3x + 9.",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "9"
+      },
+      "correctOption": "C",
+      "explanation": "5x - 3x = 9 + 7 => 2x = 16 => x = 8.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Algebra & Numeracy"
+    },
+    {
+      "id": "q-mth-4",
+      "subjectId": "sub-math",
+      "prompt": "Calculate the simple interest on ₦25,000 for 2 years at 6% per annum.",
+      "options": {
+        "A": "₦1,500",
+        "B": "₦2,500",
+        "C": "₦3,000",
+        "D": "₦3,500"
+      },
+      "correctOption": "C",
+      "explanation": "I = (P × R × T) / 100 = (25000 × 6 × 2) / 100 = ₦3,000.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Algebra & Numeracy"
+    },
+    {
+      "id": "q-mth-5",
+      "subjectId": "sub-math",
+      "prompt": "The sum of angles in a triangle is:",
+      "options": {
+        "A": "90°",
+        "B": "180°",
+        "C": "270°",
+        "D": "360°"
+      },
+      "correctOption": "B",
+      "explanation": "The three interior angles of any Euclidean triangle always sum to 180°.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Algebra & Numeracy"
+    },
+    {
+      "id": "q-mth-6",
+      "subjectId": "sub-math",
+      "prompt": "What is the median of the data set: 12, 7, 19, 14, 9, 15, 11?",
+      "options": {
+        "A": "11",
+        "B": "12",
+        "C": "14",
+        "D": "15"
+      },
+      "correctOption": "B",
+      "explanation": "Ordered set: 7, 9, 11, 12, 14, 15, 19. The middle value is 12.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Algebra & Numeracy"
+    },
+    {
+      "id": "q-mth-7",
+      "subjectId": "sub-math",
+      "prompt": "A rectangle has a length of 14 cm and a perimeter of 44 cm. Find its width.",
+      "options": {
+        "A": "6 cm",
+        "B": "8 cm",
+        "C": "10 cm",
+        "D": "16 cm"
+      },
+      "correctOption": "B",
+      "explanation": "Perimeter = 2(l + w) => 44 = 2(14 + w) => 22 = 14 + w => w = 8 cm.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Algebra & Numeracy"
+    },
+    {
+      "id": "q-mth-8",
+      "subjectId": "sub-math",
+      "prompt": "Evaluate √(144) + 3².",
+      "options": {
+        "A": "18",
+        "B": "21",
+        "C": "23",
+        "D": "27"
+      },
+      "correctOption": "B",
+      "explanation": "√144 = 12 and 3² = 9, so 12 + 9 = 21.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Algebra & Numeracy"
+    },
+    {
+      "id": "q-eng-1",
+      "subjectId": "sub-eng",
+      "prompt": "Choose the word that is NEAREST IN MEANING to the underlined word: The principal commended the students for their DILIGENCE.",
+      "options": {
+        "A": "Hard work",
+        "B": "Punctuality",
+        "C": "Obedience",
+        "D": "Patience"
+      },
+      "correctOption": "A",
+      "explanation": "Diligence means careful and persistent hard work or effort.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Lexis & Structure"
+    },
+    {
+      "id": "q-eng-2",
+      "subjectId": "sub-eng",
+      "prompt": "Fill in the blank with the most suitable option: Neither the teacher nor the students _____ present at the assembly.",
+      "options": {
+        "A": "was",
+        "B": "is",
+        "C": "were",
+        "D": "has been"
+      },
+      "correctOption": "C",
+      "explanation": "With \"neither...nor\", the verb agrees with the nearer subject (\"the students\", plural), so \"were\" is correct.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Lexis & Structure"
+    },
+    {
+      "id": "q-eng-3",
+      "subjectId": "sub-eng",
+      "prompt": "Choose the option OPPOSITE IN MEANING to: The witness gave a CANDID account of the incident.",
+      "options": {
+        "A": "Honest",
+        "B": "Deceitful",
+        "C": "Brief",
+        "D": "Clear"
+      },
+      "correctOption": "B",
+      "explanation": "Candid means frank and truthful; its opposite is deceitful.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Lexis & Structure"
+    },
+    {
+      "id": "q-eng-4",
+      "subjectId": "sub-eng",
+      "prompt": "Identify the figure of speech in: \"The classroom was a beehive of activity during the science fair.\"",
+      "options": {
+        "A": "Simile",
+        "B": "Metaphor",
+        "C": "Personification",
+        "D": "Hyperbole"
+      },
+      "correctOption": "B",
+      "explanation": "Comparing the classroom directly to a beehive without \"like\" or \"as\" is a metaphor.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Lexis & Structure"
+    },
+    {
+      "id": "q-eng-5",
+      "subjectId": "sub-eng",
+      "prompt": "Select the correctly spelt word:",
+      "options": {
+        "A": "Accomodation",
+        "B": "Acommodation",
+        "C": "Accommodation",
+        "D": "Acomodation"
+      },
+      "correctOption": "C",
+      "explanation": "Accommodation has double \"c\" and double \"m\".",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Lexis & Structure"
+    },
+    {
+      "id": "q-eng-6",
+      "subjectId": "sub-eng",
+      "prompt": "Complete the sentence: She has been studying at JAIMAN GOLDENLITE TECH LTD _____ 2023.",
+      "options": {
+        "A": "for",
+        "B": "from",
+        "C": "since",
+        "D": "during"
+      },
+      "correctOption": "C",
+      "explanation": "\"Since\" is used with a specific starting point in time (2023).",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Lexis & Structure"
+    },
+    {
+      "id": "q-eng-7",
+      "subjectId": "sub-eng",
+      "prompt": "Which of the following is a synonym for \"ephemeral\"?",
+      "options": {
+        "A": "Permanent",
+        "B": "Short-lived",
+        "C": "Ancient",
+        "D": "Mysterious"
+      },
+      "correctOption": "B",
+      "explanation": "Ephemeral describes something lasting for a very short time.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Lexis & Structure"
+    },
+    {
+      "id": "q-eng-8",
+      "subjectId": "sub-eng",
+      "prompt": "Choose the correct question tag: You prepared well for the CBT examination, _____?",
+      "options": {
+        "A": "didn't you",
+        "B": "weren't you",
+        "C": "haven't you",
+        "D": "did you"
+      },
+      "correctOption": "A",
+      "explanation": "A positive past simple statement (\"prepared\") takes the negative past simple tag \"didn't you\".",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Lexis & Structure"
+    },
+    {
+      "id": "q-civ-1",
+      "subjectId": "sub-civic",
+      "prompt": "Which arm of government in Nigeria is responsible for interpreting the laws and administering justice?",
+      "options": {
+        "A": "The Executive",
+        "B": "The Legislature",
+        "C": "The Judiciary",
+        "D": "The Civil Service"
+      },
+      "correctOption": "C",
+      "explanation": "The Judiciary interprets the constitution and laws through the courts.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Citizenship & Government"
+    },
+    {
+      "id": "q-civ-2",
+      "subjectId": "sub-civic",
+      "prompt": "What do the two white horses on the Nigerian Coat of Arms symbolize?",
+      "options": {
+        "A": "Strength and Pride",
+        "B": "Dignity",
+        "C": "Fertile Soil",
+        "D": "Unity and Faith"
+      },
+      "correctOption": "B",
+      "explanation": "The two white horses represent dignity; the black shield represents fertile soil.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Citizenship & Government"
+    },
+    {
+      "id": "q-civ-3",
+      "subjectId": "sub-civic",
+      "prompt": "In what year was the National Youth Service Corps (NYSC) scheme established in Nigeria?",
+      "options": {
+        "A": "1963",
+        "B": "1973",
+        "C": "1979",
+        "D": "1999"
+      },
+      "correctOption": "B",
+      "explanation": "NYSC was established on 22 May 1973 to foster national unity and reconstruction.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Citizenship & Government"
+    },
+    {
+      "id": "q-civ-4",
+      "subjectId": "sub-civic",
+      "prompt": "The principle that no citizen is above the law and all citizens are equal before the law is called:",
+      "options": {
+        "A": "Separation of Powers",
+        "B": "Rule of Law",
+        "C": "Federalism",
+        "D": "Checks and Balances"
+      },
+      "correctOption": "B",
+      "explanation": "The Rule of Law guarantees supremacy of the law and equality before it.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Citizenship & Government"
+    },
+    {
+      "id": "q-civ-5",
+      "subjectId": "sub-civic",
+      "prompt": "Igarra is the administrative headquarters of which Local Government Area in Edo State?",
+      "options": {
+        "A": "Etsako West",
+        "B": "Owan East",
+        "C": "Akoko-Edo",
+        "D": "Esan Central"
+      },
+      "correctOption": "C",
+      "explanation": "Igarra is the headquarters of Akoko-Edo Local Government Area, Edo State.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Citizenship & Government"
+    },
+    {
+      "id": "q-civ-6",
+      "subjectId": "sub-civic",
+      "prompt": "Which of the following is a fundamental duty of a responsible Nigerian citizen?",
+      "options": {
+        "A": "Evading taxes during inflation",
+        "B": "Respecting national symbols and paying taxes promptly",
+        "C": "Ignoring traffic regulations",
+        "D": "Vandalizing public infrastructure"
+      },
+      "correctOption": "B",
+      "explanation": "Paying taxes promptly and respecting national symbols are civic obligations.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Citizenship & Government"
+    },
+    {
+      "id": "q-bsc-1",
+      "subjectId": "sub-bsc",
+      "prompt": "Which gas makes up approximately 78% of the Earth’s atmosphere?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Carbon dioxide",
+        "C": "Nitrogen",
+        "D": "Argon"
+      },
+      "correctOption": "C",
+      "explanation": "Dry air consists of roughly 78% nitrogen and 21% oxygen.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Matter & Living Systems"
+    },
+    {
+      "id": "q-bsc-2",
+      "subjectId": "sub-bsc",
+      "prompt": "Which organ in the human body pumps blood throughout the circulatory system?",
+      "options": {
+        "A": "Liver",
+        "B": "Kidney",
+        "C": "Heart",
+        "D": "Lung"
+      },
+      "correctOption": "C",
+      "explanation": "The heart acts as the muscular pump driving blood circulation.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Matter & Living Systems"
+    },
+    {
+      "id": "q-bsc-3",
+      "subjectId": "sub-bsc",
+      "prompt": "What is the boiling point of pure water at standard atmospheric pressure?",
+      "options": {
+        "A": "0°C",
+        "B": "50°C",
+        "C": "100°C",
+        "D": "212°C"
+      },
+      "correctOption": "C",
+      "explanation": "Pure water boils at 100°C (212°F) at sea level.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Matter & Living Systems"
+    },
+    {
+      "id": "q-bsc-4",
+      "subjectId": "sub-bsc",
+      "prompt": "Green plants manufacture their food through a process called:",
+      "options": {
+        "A": "Respiration",
+        "B": "Photosynthesis",
+        "C": "Transpiration",
+        "D": "Germination"
+      },
+      "correctOption": "B",
+      "explanation": "Photosynthesis uses sunlight, water, and carbon dioxide to produce glucose.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Matter & Living Systems"
+    },
+    {
+      "id": "q-bsc-5",
+      "subjectId": "sub-bsc",
+      "prompt": "Which of the following is a renewable source of energy?",
+      "options": {
+        "A": "Coal",
+        "B": "Crude oil",
+        "C": "Solar energy",
+        "D": "Natural gas"
+      },
+      "correctOption": "C",
+      "explanation": "Solar energy is naturally replenished and does not deplete like fossil fuels.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Matter & Living Systems"
+    },
+    {
+      "id": "q-bsc-6",
+      "subjectId": "sub-bsc",
+      "prompt": "The instrument used to measure temperature is called a:",
+      "options": {
+        "A": "Barometer",
+        "B": "Thermometer",
+        "C": "Anemometer",
+        "D": "Hygrometer"
+      },
+      "correctOption": "B",
+      "explanation": "A thermometer measures temperature; a barometer measures atmospheric pressure.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Matter & Living Systems"
+    },
+    {
+      "id": "q-bio-1",
+      "subjectId": "sub-bio",
+      "prompt": "Which organelle is known as the powerhouse of a eukaryotic cell because it generates ATP?",
+      "options": {
+        "A": "Ribosome",
+        "B": "Golgi apparatus",
+        "C": "Mitochondrion",
+        "D": "Lysosome"
+      },
+      "correctOption": "C",
+      "explanation": "Mitochondria carry out aerobic respiration to produce ATP.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Cell Biology & Ecology"
+    },
+    {
+      "id": "q-bio-2",
+      "subjectId": "sub-bio",
+      "prompt": "The transport tissue in vascular plants responsible for carrying water and mineral salts from roots to leaves is:",
+      "options": {
+        "A": "Phloem",
+        "B": "Xylem",
+        "C": "Cortex",
+        "D": "Cambium"
+      },
+      "correctOption": "B",
+      "explanation": "Xylem transports water and dissolved minerals upward; phloem transports sugars.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Cell Biology & Ecology"
+    },
+    {
+      "id": "q-bio-3",
+      "subjectId": "sub-bio",
+      "prompt": "Which blood cells are primarily responsible for defending the body against pathogens?",
+      "options": {
+        "A": "Erythrocytes",
+        "B": "Leucocytes",
+        "C": "Platelets",
+        "D": "Plasma proteins"
+      },
+      "correctOption": "B",
+      "explanation": "Leucocytes (white blood cells) fight infection and foreign pathogens.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Cell Biology & Ecology"
+    },
+    {
+      "id": "q-bio-4",
+      "subjectId": "sub-bio",
+      "prompt": "In human genetics, a male child inherits which pair of sex chromosomes?",
+      "options": {
+        "A": "XX",
+        "B": "XY",
+        "C": "YY",
+        "D": "XO"
+      },
+      "correctOption": "B",
+      "explanation": "Human males have one X and one Y chromosome (XY).",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Cell Biology & Ecology"
+    },
+    {
+      "id": "q-bio-5",
+      "subjectId": "sub-bio",
+      "prompt": "Deficiency of Vitamin C in the human diet causes:",
+      "options": {
+        "A": "Rickets",
+        "B": "Scurvy",
+        "C": "Beriberi",
+        "D": "Goitre"
+      },
+      "correctOption": "B",
+      "explanation": "Lack of Vitamin C (ascorbic acid) leads to scurvy, causing bleeding gums.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Cell Biology & Ecology"
+    },
+    {
+      "id": "q-bio-6",
+      "subjectId": "sub-bio",
+      "prompt": "Which ecological instrument is used to measure light intensity in a habitat?",
+      "options": {
+        "A": "Photometer",
+        "B": "Secchi disc",
+        "C": "Potometer",
+        "D": "Rain gauge"
+      },
+      "correctOption": "A",
+      "explanation": "A photometer measures light intensity (a potometer measures transpiration rate).",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Cell Biology & Ecology"
+    },
+    {
+      "id": "q-chm-1",
+      "subjectId": "sub-chem",
+      "prompt": "What is the atomic number of Carbon?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "12",
+        "D": "14"
+      },
+      "correctOption": "B",
+      "explanation": "Carbon has 6 protons in its nucleus, so its atomic number is 6.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Atomic Structure & Acids"
+    },
+    {
+      "id": "q-chm-2",
+      "subjectId": "sub-chem",
+      "prompt": "A solution with a pH value of 2 is:",
+      "options": {
+        "A": "Strongly acidic",
+        "B": "Neutral",
+        "C": "Weakly alkaline",
+        "D": "Strongly alkaline"
+      },
+      "correctOption": "A",
+      "explanation": "Values below 7 are acidic, and pH 2 indicates a strong acid.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Atomic Structure & Acids"
+    },
+    {
+      "id": "q-chm-3",
+      "subjectId": "sub-chem",
+      "prompt": "Which separation technique is best used to obtain pure water from sea water?",
+      "options": {
+        "A": "Filtration",
+        "B": "Simple distillation",
+        "C": "Chromatography",
+        "D": "Sublimation"
+      },
+      "correctOption": "B",
+      "explanation": "Simple distillation vaporizes and condenses pure water away from dissolved salts.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Atomic Structure & Acids"
+    },
+    {
+      "id": "q-chm-4",
+      "subjectId": "sub-chem",
+      "prompt": "The chemical formula for Calcium Trioxocarbonate (IV) is:",
+      "options": {
+        "A": "CaCO₂",
+        "B": "CaCO₃",
+        "C": "Ca(OH)₂",
+        "D": "CaSO₄"
+      },
+      "correctOption": "B",
+      "explanation": "Calcium carbonate has the formula CaCO₃.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Atomic Structure & Acids"
+    },
+    {
+      "id": "q-chm-5",
+      "subjectId": "sub-chem",
+      "prompt": "Which of the following is an example of a noble gas?",
+      "options": {
+        "A": "Chlorine",
+        "B": "Argon",
+        "C": "Nitrogen",
+        "D": "Hydrogen"
+      },
+      "correctOption": "B",
+      "explanation": "Argon belongs to Group 0 (Group 18) noble gases.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Atomic Structure & Acids"
+    },
+    {
+      "id": "q-phy-1",
+      "subjectId": "sub-phy",
+      "prompt": "What is the SI unit of electrical resistance?",
+      "options": {
+        "A": "Volt",
+        "B": "Ampere",
+        "C": "Ohm",
+        "D": "Watt"
+      },
+      "correctOption": "C",
+      "explanation": "Electrical resistance is measured in Ohms (Ω).",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Mechanics & Electricity"
+    },
+    {
+      "id": "q-phy-2",
+      "subjectId": "sub-phy",
+      "prompt": "A car travels 180 metres in 12 seconds at constant speed. What is its speed?",
+      "options": {
+        "A": "12 m/s",
+        "B": "15 m/s",
+        "C": "18 m/s",
+        "D": "20 m/s"
+      },
+      "correctOption": "B",
+      "explanation": "Speed = Distance / Time = 180 / 12 = 15 m/s.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Mechanics & Electricity"
+    },
+    {
+      "id": "q-phy-3",
+      "subjectId": "sub-phy",
+      "prompt": "Which of the following quantities is a scalar quantity?",
+      "options": {
+        "A": "Velocity",
+        "B": "Force",
+        "C": "Mass",
+        "D": "Acceleration"
+      },
+      "correctOption": "C",
+      "explanation": "Mass has magnitude only and no direction, making it a scalar quantity.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Mechanics & Electricity"
+    },
+    {
+      "id": "q-phy-4",
+      "subjectId": "sub-phy",
+      "prompt": "If a resistor of 6 Ω carries a current of 2 A, what is the potential difference across it?",
+      "options": {
+        "A": "3 V",
+        "B": "4 V",
+        "C": "8 V",
+        "D": "12 V"
+      },
+      "correctOption": "D",
+      "explanation": "By Ohm’s law, V = I × R = 2 A × 6 Ω = 12 V.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Mechanics & Electricity"
+    },
+    {
+      "id": "q-phy-5",
+      "subjectId": "sub-phy",
+      "prompt": "Sound waves cannot travel through:",
+      "options": {
+        "A": "Steel",
+        "B": "Water",
+        "C": "Air",
+        "D": "A vacuum"
+      },
+      "correctOption": "D",
+      "explanation": "Sound is a mechanical wave that requires a material medium and cannot propagate through a vacuum.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Mechanics & Electricity"
+    },
+    {
+      "id": "q-ict-1",
+      "subjectId": "sub-ict",
+      "prompt": "Which component of the computer is referred to as the brain of the system?",
+      "options": {
+        "A": "Hard Disk Drive",
+        "B": "Central Processing Unit (CPU)",
+        "C": "Random Access Memory (RAM)",
+        "D": "Power Supply Unit"
+      },
+      "correctOption": "B",
+      "explanation": "The CPU executes instructions and coordinates arithmetic and logic operations.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Hardware & Data Processing"
+    },
+    {
+      "id": "q-ict-2",
+      "subjectId": "sub-ict",
+      "prompt": "How many bits make one byte?",
+      "options": {
+        "A": "4 bits",
+        "B": "8 bits",
+        "C": "16 bits",
+        "D": "32 bits"
+      },
+      "correctOption": "B",
+      "explanation": "1 byte equals 8 bits.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Hardware & Data Processing"
+    },
+    {
+      "id": "q-ict-3",
+      "subjectId": "sub-ict",
+      "prompt": "Which of the following is an example of an output device?",
+      "options": {
+        "A": "Optical Mouse",
+        "B": "Flatbed Scanner",
+        "C": "Laser Printer",
+        "D": "Keyboard"
+      },
+      "correctOption": "C",
+      "explanation": "A laser printer produces hard-copy output from the computer.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Hardware & Data Processing"
+    },
+    {
+      "id": "q-ict-4",
+      "subjectId": "sub-ict",
+      "prompt": "In spreadsheet software, every formula must begin with which symbol?",
+      "options": {
+        "A": "#",
+        "B": "@",
+        "C": "=",
+        "D": "$"
+      },
+      "correctOption": "C",
+      "explanation": "Formulas in Excel and similar spreadsheet applications start with an equals sign (=).",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Hardware & Data Processing"
+    },
+    {
+      "id": "q-ict-5",
+      "subjectId": "sub-ict",
+      "prompt": "What does HTTP stand for on the World Wide Web?",
+      "options": {
+        "A": "HyperText Transfer Protocol",
+        "B": "High Transmission Text Process",
+        "C": "Hyperlink Tracking Terminal Program",
+        "D": "Host Transfer Technology Protocol"
+      },
+      "correctOption": "A",
+      "explanation": "HTTP stands for HyperText Transfer Protocol.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Hardware & Data Processing"
+    },
+    {
+      "id": "q-ict-6",
+      "subjectId": "sub-ict",
+      "prompt": "Which type of memory loses its stored data as soon as electrical power is switched off?",
+      "options": {
+        "A": "ROM",
+        "B": "SSD",
+        "C": "RAM",
+        "D": "Flash Drive"
+      },
+      "correctOption": "C",
+      "explanation": "RAM is volatile memory and loses its contents when power is turned off.",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "Hardware & Data Processing"
+    },
+    {
+      "id": "q-mth-9",
+      "subjectId": "sub-math",
+      "type": "true_false",
+      "classLevel": "ALL",
+      "topic": "Number Theory",
+      "prompt": "Every prime number greater than 2 is an odd integer.",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "",
+        "D": ""
+      },
+      "correctOption": "A",
+      "explanation": "2 is the only even prime number; all other primes are odd."
+    },
+    {
+      "id": "q-mth-10",
+      "subjectId": "sub-math",
+      "type": "fill_blank",
+      "classLevel": "ALL",
+      "topic": "Geometry",
+      "prompt": "A polygon with exactly six sides is called a _______.",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correctOption": "A",
+      "acceptableAnswers": [
+        "hexagon",
+        "a hexagon"
+      ],
+      "explanation": "A six-sided polygon is a hexagon."
+    },
+    {
+      "id": "q-eng-9",
+      "subjectId": "sub-eng",
+      "type": "comprehension",
+      "classLevel": "ALL",
+      "topic": "Reading Comprehension",
+      "passageTitle": "Digital Libraries in Nigerian Schools",
+      "passage": "Over the past decade, secondary schools across Edo State have modernized their libraries by introducing offline e-learning servers and Computer-Based Test (CBT) laboratories. Students in rural and semi-urban towns like Igarra can now practise WAEC and NECO past questions without uninterrupted internet access. Teachers report that regular digital drills reduce examination anxiety and improve time management.",
+      "prompt": "According to the passage, what is one major benefit of regular CBT drills for students?",
+      "options": {
+        "A": "They replace all classroom textbooks permanently",
+        "B": "They reduce examination anxiety and improve time management",
+        "C": "They eliminate the need for secondary school teachers",
+        "D": "They require continuous international travel"
+      },
+      "correctOption": "B",
+      "explanation": "The final sentence states that regular digital drills reduce examination anxiety and improve time management."
+    },
+    {
+      "id": "q-civ-7",
+      "subjectId": "sub-civic",
+      "type": "true_false",
+      "classLevel": "ALL",
+      "topic": "Nigerian Constitution",
+      "prompt": "Nigeria operates a federal system of government with 36 states and the Federal Capital Territory.",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "",
+        "D": ""
+      },
+      "correctOption": "A",
+      "explanation": "The 1999 Constitution establishes Nigeria as a Federation of 36 states and the FCT."
+    },
+    {
+      "id": "q-prc-1",
+      "subjectId": "sub-practice",
+      "type": "mcq",
+      "classLevel": "ALL",
+      "topic": "CBT Orientation",
+      "prompt": "Which button in the CBT interface lets you mark a difficult question to revisit before submitting?",
+      "options": {
+        "A": "Sign Out",
+        "B": "Mark for Review",
+        "C": "Auto-fill Profile",
+        "D": "Scratch Card PIN"
+      },
+      "correctOption": "B",
+      "explanation": "The \"Mark for Review\" toggle highlights the item on the Question Navigator."
+    },
+    {
+      "id": "q-prc-2",
+      "subjectId": "sub-practice",
+      "type": "true_false",
+      "classLevel": "ALL",
+      "topic": "CBT Orientation",
+      "prompt": "True or False: Your selected answers are automatically saved during an examination in case of a brief power cut or refresh.",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "",
+        "D": ""
+      },
+      "correctOption": "A",
+      "explanation": "Real-time autosave persists answers locally and on the school CBT server."
+    },
+    {
+      "id": "q-prc-3",
+      "subjectId": "sub-practice",
+      "type": "fill_blank",
+      "classLevel": "ALL",
+      "topic": "General Knowledge",
+      "prompt": "Igarra is the administrative headquarters of _______ Local Government Area in Edo State.",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correctOption": "A",
+      "acceptableAnswers": [
+        "akoko-edo",
+        "akoko edo",
+        "akoko-edo lga"
+      ],
+      "explanation": "Igarra is the headquarters of Akoko-Edo LGA, Edo State."
+    },
+    {
+      "id": "q-prc-4",
+      "subjectId": "sub-practice",
+      "type": "comprehension",
+      "classLevel": "ALL",
+      "topic": "Reading Comprehension",
+      "passageTitle": "Examination Readiness",
+      "passage": "Before beginning a timed CBT paper at JAIMAN GOLDENLITE TECH LTD, candidates verify their Admission Number, read the paper instructions carefully, and note the total time allowed. Managing minutes wisely—answering confident questions first and flagging harder items for later—consistently produces higher scores.",
+      "prompt": "Based on the passage, what strategy helps candidates achieve higher CBT scores?",
+      "options": {
+        "A": "Spending half the exam time on Question 1",
+        "B": "Skipping the instructions completely",
+        "C": "Answering confident questions first and flagging harder ones for review",
+        "D": "Submitting before checking unanswered items"
+      },
+      "correctOption": "C",
+      "explanation": "The passage highlights answering confident items first and flagging harder ones."
+    }
+  ],
+  "results": [
+    {
+      "id": "res-seed-1",
+      "referenceCode": "GSS-2026-8410",
+      "studentName": "Okafor Chinedu Samuel",
+      "examNumber": "GSS/2026/0104",
+      "classLevel": "SS3",
+      "subjectId": "sub-math",
+      "subjectName": "Mathematics",
+      "subjectCode": "MTH 101",
+      "score": 7,
+      "totalQuestions": 8,
+      "percentage": 88,
+      "passMark": 50,
+      "passed": true,
+      "grade": "A1 (Distinction)",
+      "durationTakenSeconds": 742,
+      "submittedAt": "2026-11-22T04:02:15.431Z",
+      "autoSubmitted": false,
+      "classArm": "A",
+      "sessionName": "2026/2027",
+      "term": "First Term",
+      "assessmentType": "Exam"
+    },
+    {
+      "id": "res-seed-2",
+      "referenceCode": "GSS-2026-8411",
+      "studentName": "Bello Amina Zainab",
+      "examNumber": "GSS/2026/0219",
+      "classLevel": "SS2",
+      "subjectId": "sub-bio",
+      "subjectName": "Biology",
+      "subjectCode": "BIO 301",
+      "score": 5,
+      "totalQuestions": 6,
+      "percentage": 83,
+      "passMark": 50,
+      "passed": true,
+      "grade": "A1 (Distinction)",
+      "durationTakenSeconds": 615,
+      "submittedAt": "2026-11-22T13:02:15.431Z",
+      "autoSubmitted": false,
+      "classArm": "A",
+      "sessionName": "2026/2027",
+      "term": "First Term",
+      "assessmentType": "Exam"
+    },
+    {
+      "id": "res-seed-3",
+      "referenceCode": "GSS-2026-8412",
+      "studentName": "Momoh Blessing Oshoke",
+      "examNumber": "GSS/2026/0342",
+      "classLevel": "JSS3",
+      "subjectId": "sub-eng",
+      "subjectName": "English Language",
+      "subjectCode": "ENG 102",
+      "score": 6,
+      "totalQuestions": 8,
+      "percentage": 75,
+      "passMark": 50,
+      "passed": true,
+      "grade": "A1 (Distinction)",
+      "durationTakenSeconds": 830,
+      "submittedAt": "2026-11-23T01:02:15.431Z",
+      "autoSubmitted": false,
+      "classArm": "A",
+      "sessionName": "2026/2027",
+      "term": "First Term",
+      "assessmentType": "Exam"
+    },
+    {
+      "id": "res-seed-4",
+      "referenceCode": "GSS-2026-8413",
+      "studentName": "Adeyemi Oluwaseun Daniel",
+      "examNumber": "GSS/2026/0408",
+      "classLevel": "JSS2",
+      "subjectId": "sub-bsc",
+      "subjectName": "Basic Science",
+      "subjectCode": "BSC 201",
+      "score": 2,
+      "totalQuestions": 6,
+      "percentage": 33,
+      "passMark": 50,
+      "passed": false,
+      "grade": "F9 (Fail)",
+      "durationTakenSeconds": 510,
+      "submittedAt": "2026-11-23T05:02:15.431Z",
+      "autoSubmitted": false,
+      "classArm": "A",
+      "sessionName": "2026/2027",
+      "term": "First Term",
+      "assessmentType": "Exam"
+    }
+  ],
+  "students": [
+    {
+      "id": "stu-seed-1",
+      "fullName": "Okafor Chinedu Samuel",
+      "examNumber": "GSS/2026/0104",
+      "classLevel": "SS3",
+      "classArm": "A",
+      "gender": "Male",
+      "guardianPhone": "0803 412 8890",
+      "registeredAt": "2026-11-20T10:38:25.580Z",
+      "registeredBy": "admin"
+    },
+    {
+      "id": "stu-seed-2",
+      "fullName": "Bello Amina Zainab",
+      "examNumber": "GSS/2026/0219",
+      "classLevel": "SS2",
+      "classArm": "B",
+      "gender": "Female",
+      "guardianPhone": "0805 729 1044",
+      "registeredAt": "2026-11-20T18:38:25.580Z",
+      "registeredBy": "admin"
+    },
+    {
+      "id": "stu-seed-3",
+      "fullName": "Momoh Blessing Oshoke",
+      "examNumber": "GSS/2026/0342",
+      "classLevel": "JSS3",
+      "classArm": "A",
+      "gender": "Female",
+      "guardianPhone": "0812 604 3318",
+      "registeredAt": "2026-11-21T10:38:25.580Z",
+      "registeredBy": "admin"
+    },
+    {
+      "id": "stu-seed-4",
+      "fullName": "Adeyemi Oluwaseun Daniel",
+      "examNumber": "GSS/2026/0408",
+      "classLevel": "JSS2",
+      "classArm": "C",
+      "gender": "Male",
+      "guardianPhone": "0806 918 5521",
+      "registeredAt": "2026-11-21T22:38:25.580Z",
+      "registeredBy": "admin"
+    }
+  ],
+  "nextAdmissionSeq": 410,
+  "scratchCards": [
+    {
+      "id": "sc-seed-1",
+      "serialNumber": "GSS-SC-1001",
+      "pin": "GLC-4829-7315-9042",
+      "batchLabel": "2026/2027 Termly Batch",
+      "maxUses": 5,
+      "usedCount": 0,
+      "isDisabled": false,
+      "createdAt": "2026-11-23T10:38:25.581Z"
+    },
+    {
+      "id": "sc-seed-2",
+      "serialNumber": "GSS-SC-1002",
+      "pin": "GLC-6194-2058-3741",
+      "batchLabel": "2026/2027 Termly Batch",
+      "maxUses": 5,
+      "usedCount": 0,
+      "isDisabled": false,
+      "createdAt": "2026-11-23T10:38:25.581Z"
+    },
+    {
+      "id": "sc-seed-3",
+      "serialNumber": "GSS-SC-1003",
+      "pin": "GLC-9375-8412-6204",
+      "batchLabel": "2026/2027 Termly Batch",
+      "maxUses": 5,
+      "usedCount": 0,
+      "isDisabled": false,
+      "createdAt": "2026-11-23T10:38:25.581Z"
+    },
+    {
+      "id": "sc-seed-4",
+      "serialNumber": "GSS-SC-1004",
+      "pin": "GLC-3517-6940-8125",
+      "batchLabel": "2026/2027 Termly Batch",
+      "maxUses": 5,
+      "usedCount": 0,
+      "isDisabled": false,
+      "createdAt": "2026-11-23T10:38:25.581Z"
+    },
+    {
+      "id": "sc-seed-5",
+      "serialNumber": "GSS-SC-1005",
+      "pin": "GLC-7402-5183-6490",
+      "batchLabel": "2026/2027 Termly Batch",
+      "maxUses": 5,
+      "usedCount": 0,
+      "isDisabled": false,
+      "createdAt": "2026-11-23T10:38:25.581Z"
+    }
+  ],
+  "settings": {
+    "requireScratchCard": true
+  },
+  "inquiries": [],
+  "activeSessions": []
+}

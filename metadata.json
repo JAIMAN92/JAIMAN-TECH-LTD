@@ -1,0 +1,6 @@
+{
+  "name": "Gloryland Secondary School CBT Portal",
+  "description": "Computer-Based Test (CBT) Examination and Result Management Platform for Gloryland Secondary School, Igarra, Edo State.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
